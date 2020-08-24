@@ -1,7 +1,7 @@
 {
-  "name": "@tvt/pagination",
-  "version": "0.1.0",
-  "description": "@tvt/pagination - React Native Pagination",
+  "name": "tvt-pagination",
+  "version": "1.0.0",
+  "description": "React Native Pagination",
   "main": "index.js",
   "types": "index.d.ts",
   "keywords": [
@@ -10,15 +10,16 @@
     "@tvt/pagination",
     "pagination"
   ],
-  "author": {
-    "name": "Tran Van Tuan",
-    "url": "http://tuantvk.com/"
+  "author": "Tran Van Tuan (http://tuantvk.com/)",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "homepage": "https://github.com/tuantvk/tvt-pagination.git",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tuantvk/tvt-pagination.git"
+    "url": "git+https://github.com/tuantvk/tvt-pagination.git"
   },
   "peerDependencies": {
     "react": "^16.0",
@@ -26,5 +27,8 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "bugs": {
+    "url": "https://github.com/tuantvk/tvt-pagination/issues"
   }
 }

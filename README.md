@@ -1,4 +1,4 @@
-# @tvt/pagination
+# tvt-pagination
 
 A long list can be divided into several pages using `Pagination`, and only one page will be loaded at a time.
 
@@ -6,7 +6,7 @@ A long list can be divided into several pages using `Pagination`, and only one p
 ### Getting started
 
 ```sh
-yarn add @tvt/pagination
+yarn add tvt-pagination
 ```
 
 
@@ -14,7 +14,7 @@ yarn add @tvt/pagination
 
 ```js
 import React from 'react';
-import Pagination from '@tvt/pagination';
+import Pagination from 'tvt-pagination';
 
 <Pagination
   defaultCurrent={1}
@@ -25,7 +25,7 @@ import Pagination from '@tvt/pagination';
 ```js
 import React from 'react';
 import { Text } from 'react-native';
-import Pagination from '@tvt/pagination';
+import Pagination from 'tvt-pagination';
 
 <Pagination
   size="small"
