@@ -20,9 +20,6 @@
     "type": "git",
     "url": "https://github.com/tuantvk/tvt-pagination.git"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "peerDependencies": {
     "react": "^16.0",
     "react-native": ">=0.57"
