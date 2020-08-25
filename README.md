@@ -9,6 +9,8 @@ A long list can be divided into several pages using `Pagination`, and only one p
 yarn add tvt-pagination
 ```
 
+![screen_shot](./assets/screen_shot.png)
+
 
 ### Example
 
@@ -16,10 +18,12 @@ yarn add tvt-pagination
 import React from 'react';
 import Pagination from 'tvt-pagination';
 
-<Pagination
-  defaultCurrent={1}
-  total={50}
-/>
+export default () => (
+  <Pagination
+    defaultCurrent={1}
+    total={50}
+  />
+);
 ```
 
 ```js
@@ -27,14 +31,32 @@ import React from 'react';
 import { Text } from 'react-native';
 import Pagination from 'tvt-pagination';
 
-<Pagination
-  size="small"
-  total={50}
-  borderColorActive="red"
-  nextIcon={
-    <Text>Next</Text>
-  }
-/>
+export default () => (
+  <Pagination
+    size="small"
+    total={50}
+    prevIcon={
+      <Text>Prev</Text>
+    }
+    nextIcon={
+      <Text>Next</Text>
+    }
+  />
+);
+```
+
+```js
+import React from 'react';
+import Pagination from 'tvt-pagination';
+
+export default () => (
+  <Pagination
+    total={50}
+    defaultCurrent={1}
+    defaultPageSize={5}
+    onChange={(page, pageSize) => alert(`${page} ${pageSize}`)}
+  />
+);
 ```
 
 
@@ -53,6 +75,6 @@ import Pagination from 'tvt-pagination';
 | activeOpacity     | Determines what the opacity of the wrapped view should be when touch is active | number | 1 |
 | prevIcon          | Set the icon prev | ReactNode | |
 | nextIcon          | Set the icon next | ReactNode | |
-| styleBox          | Style for box button | ReactNode | |
-| style             | Style for `Pagination` | ReactNode | |
+| styleBox          | Style for box button | [ViewStyleProps](https://reactnative.dev/docs/view-style-props#docsNav) | |
+| style             | Style for `Pagination` | [ViewStyleProps](https://reactnative.dev/docs/view-style-props#docsNav) | |
 | testID            | Used to locate this view in end-to-end tests | string | |
