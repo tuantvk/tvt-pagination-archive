@@ -57,11 +57,12 @@ const Pagination = ({
   nextIcon,
   styleBox,
   testID,
+  style,
 }) => {
   const [currentPage, _setPage] = useState(defaultCurrent);
 
   let paginations = [];
-  for (let i = 1; i < total / defaultPageSize; i++) {
+  for (let i = 1; i < (total / defaultPageSize) + 1; i++) {
     paginations.push(i);
   }
 
@@ -77,7 +78,7 @@ const Pagination = ({
   }
 
   return (
-    <View style={styles.row} testID={testID}>
+    <View style={[styles.row, style]} testID={testID}>
       <Box
         borderColor={borderColor}
         disabled={currentPage === paginations[0] ? true : false}

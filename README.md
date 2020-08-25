@@ -54,4 +54,5 @@ import Pagination from 'tvt-pagination';
 | prevIcon          | Set the icon prev | ReactNode | |
 | nextIcon          | Set the icon next | ReactNode | |
 | styleBox          | Style for box button | ReactNode | |
-| testID          | Used to locate this view in end-to-end tests | string | |
+| style             | Style for `Pagination` | ReactNode | |
+| testID            | Used to locate this view in end-to-end tests | string | |
